@@ -1,0 +1,14 @@
+Package: cuttlefish-integration
+Source: cuttlefish-common
+Version: 0.9.25
+Architecture: amd64
+Maintainer: Cuttlefish Team
+Installed-Size: 34
+Depends: cuttlefish-base, qemu-system-arm (>= 2.8.0), qemu-system-x86 (>= 2.8.0)
+Conflicts: diverts-etc++ssh++sshd+-+config
+Provides: diverts-etc++ssh++sshd+-+config
+Section: misc
+Priority: optional
+Description: Utilities for Android cuttlefish devices in the cloud
+ Configuration and utilities for Android cuttlefish devices running on
+ Google Compute Engine. Not intended for use on developer machines.

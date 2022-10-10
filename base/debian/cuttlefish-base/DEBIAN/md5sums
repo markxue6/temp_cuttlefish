@@ -1,0 +1,6 @@
+3bf12adf92d54df2bafdb4bdb60627b5  lib/udev/rules.d/60-cuttlefish-base.rules
+2e2f601e620800229e84836669e03525  usr/bin/install_zip.sh
+f1c34f884e19b07ec21a952656417d40  usr/lib/cuttlefish-common/bin/capability_query.py
+332f578143444e90b9f3d2a3e71b5641  usr/lib/cuttlefish-common/bin/unpack_boot_image.py
+27d5c702c88edfaf0d2aa5f7dc337e8f  usr/share/doc/cuttlefish-base/changelog.gz
+527d36fb7433c2f2a2f5d02b16627cf2  usr/share/doc/cuttlefish-base/copyright

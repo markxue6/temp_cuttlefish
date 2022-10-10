@@ -1,0 +1,4 @@
+./host/deploy/install_zip.sh
+./host/deploy/unpack_boot_image.py
+./host/deploy/capability_query.py
+./host/packages/cuttlefish-base/etc

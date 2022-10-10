@@ -1,0 +1,3 @@
+./src/operator/operator
+./src/operator/webui/dist/static
+./src/operator/intercept

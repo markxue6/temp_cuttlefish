@@ -1,0 +1,4 @@
+./host/packages/cuttlefish-orchestration/etc
+./src/host_orchestrator/host_orchestrator
+./src/operator/webui/dist/static
+./src/operator/intercept

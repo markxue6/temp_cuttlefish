@@ -1,0 +1,61 @@
+Source: cuttlefish-common
+Maintainer: Cuttlefish Team
+Section: misc
+Priority: optional
+Build-Depends: config-package-dev,
+               debhelper-compat (= 12),
+Standards-Version: 4.5.0
+
+Package: cuttlefish-base
+Architecture: any
+Depends: adduser,
+         binfmt-support [arm64],
+         bridge-utils,
+         dnsmasq-base,
+         e2fsprogs,
+         f2fs-tools,
+         grub-efi-arm64-bin [arm64],
+         grub-efi-ia32-bin [!arm64],
+         iptables,
+         libarchive-tools | bsdtar,
+         libdrm2,
+         libfdt1,
+         libgl1,
+         libusb-1.0-0,
+         libwayland-client0,
+         libwayland-server0,
+         libx11-6,
+         libxext6,
+         lsb-base,
+         net-tools,
+         python3,
+         qemu-user-static [arm64],
+         ${misc:Depends},
+         ${shlibs:Depends}
+Pre-Depends: ${misc:Pre-Depends}
+Breaks: cuttlefish-common (<= 0.9.24)
+Description: Cuttlefish Android Virtual Device companion package
+ Contains set of tools and binaries required to boot up and manage
+ Cuttlefish Android Virtual Device that are used in all deployments.
+
+Package: cuttlefish-common
+Architecture: any
+Depends: cuttlefish-base,
+         cuttlefish-user,
+Description: Cuttlefish Android Virtual Device companion package
+ Metapackage ensuring all packages needed to run and interact with
+ Cuttlefish device are installed.
+
+Package: cuttlefish-integration
+Architecture: any
+Depends: cuttlefish-base,
+         qemu-system-arm (>= 2.8.0),
+         qemu-system-x86 (>= 2.8.0),
+         ${shlibs:Depends},
+         ${misc:Depends}
+Pre-Depends: ${misc:Pre-Depends}
+Conflicts: ${diverted-files}
+Provides: ${diverted-files}
+Description: Utilities for Android cuttlefish devices in the cloud
+ Configuration and utilities for Android cuttlefish devices running on
+ Google Compute Engine. Not intended for use on developer machines.

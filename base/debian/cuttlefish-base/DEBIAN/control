@@ -1,0 +1,14 @@
+Package: cuttlefish-base
+Source: cuttlefish-common
+Version: 0.9.25
+Architecture: amd64
+Maintainer: Cuttlefish Team
+Installed-Size: 48
+Pre-Depends: init-system-helpers (>= 1.54~)
+Depends: adduser, bridge-utils, dnsmasq-base, e2fsprogs, f2fs-tools, grub-efi-ia32-bin, iptables, libarchive-tools | bsdtar, libdrm2, libfdt1, libgl1, libusb-1.0-0, libwayland-client0, libwayland-server0, libx11-6, libxext6, lsb-base, net-tools, python3
+Breaks: cuttlefish-common (<= 0.9.24)
+Section: misc
+Priority: optional
+Description: Cuttlefish Android Virtual Device companion package
+ Contains set of tools and binaries required to boot up and manage
+ Cuttlefish Android Virtual Device that are used in all deployments.

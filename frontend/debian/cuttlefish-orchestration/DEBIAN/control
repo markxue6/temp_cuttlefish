@@ -1,0 +1,13 @@
+Package: cuttlefish-orchestration
+Source: cuttlefish-frontend
+Version: 0.9.25
+Architecture: amd64
+Maintainer: Cuttlefish Team
+Installed-Size: 6205
+Pre-Depends: init-system-helpers (>= 1.54~)
+Depends: cuttlefish-base, adduser, openssl, libc6 (>= 2.34)
+Breaks: cuttlefish-user
+Section: misc
+Priority: optional
+Description: Cuttlefish Android Virtual Device companion package
+ Contains the host orchestrator.

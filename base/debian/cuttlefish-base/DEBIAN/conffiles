@@ -1,0 +1,3 @@
+/etc/default/cuttlefish-host-resources
+/etc/init.d/cuttlefish-host-resources
+/etc/modules-load.d/cuttlefish-common.conf

@@ -1,0 +1,11 @@
+Package: cuttlefish-common
+Version: 0.9.25
+Architecture: amd64
+Maintainer: Cuttlefish Team
+Installed-Size: 11
+Depends: cuttlefish-base, cuttlefish-user
+Section: misc
+Priority: optional
+Description: Cuttlefish Android Virtual Device companion package
+ Metapackage ensuring all packages needed to run and interact with
+ Cuttlefish device are installed.

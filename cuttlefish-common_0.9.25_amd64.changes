@@ -1,0 +1,40 @@
+Format: 1.8
+Date: Wed, 31 Aug 2022 14:42:34 -0700
+Source: cuttlefish-common
+Binary: cuttlefish-base cuttlefish-common cuttlefish-integration
+Built-For-Profiles: noudeb
+Architecture: source amd64
+Version: 0.9.25
+Distribution: UNRELEASED
+Urgency: medium
+Maintainer: Cuttlefish Team
+Changed-By: Jorge Moreira Broche <jemoreira@google.com>
+Description:
+ cuttlefish-base - Cuttlefish Android Virtual Device companion package
+ cuttlefish-common - Cuttlefish Android Virtual Device companion package
+ cuttlefish-integration - Utilities for Android cuttlefish devices in the cloud
+Changes:
+ cuttlefish-common (0.9.25) UNRELEASED; urgency=medium
+ .
+   * Split source package into common and frontend
+Checksums-Sha1:
+ 017d470097c69232ac98502919dca319554d0949 712 cuttlefish-common_0.9.25.dsc
+ e168e7b3bd0fd2d3226463b64bbd7d9963ffdd83 10296 cuttlefish-common_0.9.25.tar.xz
+ b247c93d1e26e470f60ddd0a38a35559b319ec41 10468 cuttlefish-base_0.9.25_amd64.deb
+ df5a972a468852983175ee479a39ff79b1541509 7034 cuttlefish-common_0.9.25_amd64.buildinfo
+ 6c8f83de680a86283261e03eb39a17690b3016c3 4210 cuttlefish-common_0.9.25_amd64.deb
+ 5eec78f5eb4ff67d0b9fd640b68216b8b789b456 6880 cuttlefish-integration_0.9.25_amd64.deb
+Checksums-Sha256:
+ 30a9c8a78e6dba164e8a6c7a90c4d3523650cac0c6fe0cacaebda3643bd26cdf 712 cuttlefish-common_0.9.25.dsc
+ d189e048061e86ac605645aa020fccd0dfdd57f18c1c891a27ee70d6de4d80cb 10296 cuttlefish-common_0.9.25.tar.xz
+ 95c6ef6c85ad7fb5b0ca9355bf12b917686a554c5062fcec6b6364892e3de6f7 10468 cuttlefish-base_0.9.25_amd64.deb
+ a8cc4cd6ea7cd7fe27b1a1122b94136c48060fb24df9fce65fcb385fe9a6a9f9 7034 cuttlefish-common_0.9.25_amd64.buildinfo
+ 239aca8a41742bba6ccbbac5480584584943f4d84c2acf9a3adb5ff0c5e15f0a 4210 cuttlefish-common_0.9.25_amd64.deb
+ b391239f37090eddbb96f643fd664fed365f6d448b0bb6c75b47bf5149f6720f 6880 cuttlefish-integration_0.9.25_amd64.deb
+Files:
+ e63ba4c250cdc87b61945a53c55d2a8f 712 misc optional cuttlefish-common_0.9.25.dsc
+ 0804f9eaa743e8376d17555551d177d2 10296 misc optional cuttlefish-common_0.9.25.tar.xz
+ 2867458796a4eaac3223e97119a7d1c4 10468 misc optional cuttlefish-base_0.9.25_amd64.deb
+ 6c644dd00b0d56fcc01a046ed6785b99 7034 misc optional cuttlefish-common_0.9.25_amd64.buildinfo
+ f6b5858c7458b5c1ff1143880b98ee5f 4210 misc optional cuttlefish-common_0.9.25_amd64.deb
+ 2ac32187bbdf69650d0f09e2f96f2e11 6880 misc optional cuttlefish-integration_0.9.25_amd64.deb

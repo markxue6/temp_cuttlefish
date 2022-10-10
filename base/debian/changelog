@@ -1,0 +1,292 @@
+cuttlefish-common (0.9.25) UNRELEASED; urgency=medium
+
+  * Split source package into common and frontend
+
+ -- Jorge Moreira Broche <jemoreira@google.com>  Wed, 31 Aug 2022 14:42:34 -0700
+
+cuttlefish-common (0.9.24) unstable; urgency=medium
+
+  * Extract cuttlefish-base from cuttlefish-common
+  * Extract operator from host-orchestrator
+
+ -- Jorge Moreira Broche <jemoreira@google.com>  Wed, 09 Jun 2022 16:43:44 -0700
+
+cuttlefish-common (0.9.23) unstable; urgency=medium
+
+  * CreateCVD endpoints for orchestrator
+  * Cosmetic changes to device list in signaling server
+  * Ability to connect with devices in the device list page
+  * Several bug fixes and improvements
+
+ -- Jorge Moreira Broche <jemoreira@google.com>  Fri, 13 May 2022 15:01:21 -0700
+
+cuttlefish-common (0.9.22) stable; urgency=medium
+
+  * Don't require deviceId parameter in host-orchestrator
+  * Start host-orchestrator on boot
+
+ -- Jorge Moreira Broche <jemoreira@google.com>  Wed, 27 Apr 2022 13:33:43 -0700
+
+cuttlefish-common (0.9.21) stable; urgency=medium
+
+  * Initial version of host-orchestrator
+
+ -- Jorge Moreira Broche <jemoreira@google.com>  Wed, 01 Dec 2021 15:03:04 -0800
+
+cuttlefish-common (0.9.20) stable; urgency=medium
+
+  [ Ram Muthiah ]
+  * Rev'ng version number to account for removal of cuttlefish-google
+
+ -- Ram Muthiah <rammuthiah@google.com>  Mon, 30 Sep 2021 13:26:02 -0700
+
+cuttlefish-common (0.9.19) stable; urgency=medium
+
+  [ Ram Muthiah ]
+  * Rev'ng version number to account for bump to debian 11
+
+  [ Tristan Muntsinger ]
+  * Add e2fsprogs package to control file (#93)
+  
+ -- Ram Muthiah <rammuthiah@google.com>  Mon, 30 Aug 2021 13:43:05 -0700
+
+cuttlefish-common (0.9.18) stable; urgency=medium
+
+  [ Kyoungwon Stephen Kim ]
+  * Added vsock_guest_cid option and separated port forwarding logic (#80)
+  * cvd_publish_${name} should be sourced in other terminals
+  * ./build.sh can build .deb packages only without building the docker image
+  * default lunch target on amd64 changed to aosp_cf_x86_64_phone-debug from corresponding x86_phone-debug
+  * default cuttlefish host package location changed for setup.sh
+  * Fix setup.sh to credibly find cvd-host_package.tar.gz from default paths
+  * Added -w/--host_network option to propagate --network host to docker run
+  * Revert "Added -w/--host_network option to propagate --network host to docker run"
+  * Update BUILDING.md
+  * Update README.md
+  * Added -v and an option to skip Google Chrome download in docker build
+  * Changed short options and default values for build.sh
+  * Changed comments in utils.sh
+
+  [ A. Cody Schuffelen ]
+  * Enable nested virtualization for cuttlefish-integration.
+
+  [ Alistair Delva ]
+  * Add grub-efi dependency to cuttlefish-common
+
+ -- Alistair Delva <adelva@google.com>  Tue, 09 Mar 2021 08:01:20 -0800
+
+cuttlefish-common (0.9.17) stable; urgency=medium
+
+  [ Alistair Delva ]
+  * Networking improvements to support Ethernet interfaces
+
+  [ A. Cody Schuffelen ]
+  * Grant access to /dev/tpm for the secure environment code
+
+ -- Cody Schuffelen <schuffelen@google.com>  Fri, 13 Nov 2020 13:35:59 -0800
+
+cuttlefish-common (0.9.16) stable; urgency=medium
+
+  [ Ram Muthiah ]
+  * Add QEMU to GCE package to enable QEMU CI testing
+
+ -- Ram Muthiah <rammuthiah@google.com>  Mon, 26 Oct 2020 10:53:54 -0700
+
+cuttlefish-common (0.9.14) stable; urgency=medium
+
+  [ Jorge E. Moreira ]
+  * Depend on Python 2.7 instead of Python 2
+
+  [ Alistair Delva ]
+  * Networking improvements to enable ipv4/ipv6 bridging
+
+  [ A. Cody Schuffelen ]
+  * Add missing runtime dependencies for crosvm
+
+ -- Jason Macnak <natsu@google.com>  Thu, 21 May 2020 03:18:25 -0800
+
+cuttlefish-common (0.9.13) stable; urgency=medium
+
+  [ Jorge E. Moreira ]
+  * Explicitly depend on iptables
+
+  [ Jason Macnak ]
+  * Load nvidia-modeset kernel module in cuttlefish-common.init
+
+  [ Alistair Delva ]
+  * Disable masquerading of DNS lookups
+  * Added /etc/default/cuttlefish-common config file
+
+ -- Alistair Delva <adelva@google.com>  Tue, 03 Mar 2020 03:18:25 -0800
+
+cuttlefish-common (0.9.12) stable; urgency=medium
+
+  [ Tristan Muntsinger ]
+  * Add in required dependencies for arm64 buster
+  * Remove superfluous dependencies for cuttlefish-common
+  * Add in net-tools dependency
+
+  [ A. Cody Schuffelen ]
+  * Add missing libusb-1.0-0 dependency
+  * Install f2fs-tools.
+
+  [ Jason Macnak ]
+  * Add missing dnsmasq-base dependency
+
+ -- Cody Schuffelen <schuffelen@google.com>  Wed, 04 Dec 2019 12:20:28 -0800
+
+Old Changelog:
+
+cuttlefish-common (0.9.11) stable; urgency=medium
+
+cuttlefish-common (0.9.10) stable; urgency=medium
+
+cuttlefish-common (0.9.9) stable; urgency=medium
+
+  * Added missing dependencies for crosvm and rockpi4
+
+ -- Greg Hartman <ghartman@google.com>  Fri, 14 Jun 2019 09:43:13 -0700
+
+cuttlefish-common (0.9.8) stable; urgency=medium
+
+  [ Greg Hartman ]
+  * Changes to enable arm builds
+  * Fix dependencies for buster
+  * Add qemu-user-static on non-amd64
+  * Remove Debian adb package
+
+  [ Julien Desprez ]
+  * Update default number of cvd account to 10
+
+ -- Cody Schuffelen <schuffelen@google.com>  Thu, 01 Aug 2019 14:54:42 -0700
+
+cuttlefish-common (0.9.6) stable; urgency=medium
+
+  * Add missing dependency on dnsmasq.
+
+ -- Cody Schuffelen <schuffelen@google.com>  Wed, 10 Apr 2019 16:26:46 -0700
+
+cuttlefish-common (0.9.5) stable; urgency=medium
+
+  * No need to displace instance_configs.cfg.template
+  * Turn on detailed logging in ssh
+  * Do a sparse unpack if the zip is local
+
+ -- Greg Hartman <ghartman@google.com>  Fri, 05 Apr 2019 17:03:33 -0700
+
+cuttlefish-common (0.9.4) stable; urgency=medium
+
+  * Add binutils for kernel decompresson on crosvm boots
+
+ -- Greg Hartman <ghartman@google.com>  Fri, 29 Mar 2019 08:46:22 -0700
+
+cuttlefish-common (0.9.3) stable; urgency=medium
+
+  [ Cody Schuffelen ]
+  * Use udev for vhost-vsock instead of a chmod.
+
+  [ Greg Hartman ]
+  * Use modprobe.d to load modules
+  * Remove remaining libvirt cruft
+  * Add missing dependencies on cuttlefish-common
+  * Revert "Use modprobe.d to load modules"
+  * Use modules-load.d to load required cuttlefish modules
+  * Add dependency on lzop for faster image uploads
+
+ -- Greg Hartman <ghartman@google.com>  Thu, 28 Mar 2019 12:44:36 -0700
+
+cuttlefish-common (0.9.1) UNRELEASED; urgency=medium
+
+  * Add a network dependency on cuttlefish-common
+
+ -- Greg Hartman <ghartman@google.com>  Fri, 01 Feb 2019 19:39:09 -0800
+
+cuttlefish-common (0.9.0) stable; urgency=medium
+
+  * install_zip.sh: exit early in case of errors
+  * install_zip.sh: support partial extraction
+  * install_zip.sh: convert sparse images
+
+ -- Greg Hartman <ghartman@google.com>  Mon, 28 Jan 2019 17:33:25 -0800
+
+cuttlefish-common (0.9+nmu4) UNRELEASED; urgency=medium
+
+  * Add support for vsock connections.
+
+ -- Cody Schuffelen <schuffelen@google.com>  Fri, 04 Jan 2019 17:06:46 -0800
+
+cuttlefish-common (0.9+nmu3) UNRELEASED; urgency=medium
+
+  [ Steven Laver ]
+  * Add acl package dependency for setfacl (required by install_zip.sh)
+
+  [ Greg Hartman ]
+  * Add rsync dependency
+
+ -- Greg Hartman <ghartman@google.com>  Thu, 20 Dec 2018 20:39:23 -0800
+
+cuttlefish-common (0.9+nmu1) unstable; urgency=medium
+
+  * Incorporate change that removes mac80211
+
+ -- Greg Hartman <ghartman@google.com>  Tue, 21 Aug 2018 15:11:27 -0700
+
+cuttlefish-common (0.8.1) stable; urgency=medium
+
+  * Remove dangling mac80211hwsim reference
+
+ -- Greg Hartman <ghartman@google.com>  Tue, 21 Aug 2018 14:47:36 -0700
+
+cuttlefish-common (0.9pre1) unstable; urgency=medium
+
+  * Initial work for vde networking architecture
+
+ -- Cody Schuffelen <schuffelen@google.com>  Mon, 20 Aug 2018 14:28:05 -0700
+
+cuttlefish-common (0.8) stable; urgency=medium
+
+  * Remove the dkms module needed for legacy WiFi. Final release for gLinux
+
+ -- Greg Hartman <ghartman@hartman.mtv.corp.google.com>  Mon, 20 Aug 2018 13:56:40 -0700
+
+cuttlefish-common (0.7) stable; urgency=medium
+
+  * Final release for GCE images
+
+ -- Greg Hartman <ghartman@hartman.mtv.corp.google.com>  Mon, 20 Aug 2018 13:38:20 -0700
+
+cuttlefish-common (0.7pre4) unstable; urgency=medium
+
+  * Put the legacy WiFi back in to allow TreeHugger to update
+
+ -- Greg Hartman <ghartman@hartman.mtv.corp.google.com>  Mon, 25 Jun 2018 15:50:59 -0700
+
+cuttlefish-common (0.7pre3) unstable; urgency=medium
+
+  * Changes to allow running without libvirt
+
+ -- Jorge Moreira Broche <jemoreira@jemoreira0.mtv.corp.google.com>  Mon, 18 Jun 2018 18:21:29 -0700
+
+cuttlefish-common (0.7pre2) UNRELEASED; urgency=medium
+
+  * Changes to add host capabilities
+
+ -- Jorge Moreira Broche <jemoreira@jemoreira0.mtv.corp.google.com>  Mon, 18 Jun 2018 18:21:29 -0700
+
+cuttlefish-common (0.7pre1) UNRELEASED; urgency=medium
+
+  * Back out the 0.6 era wifi b/110059274
+
+ -- Greg Hartman <ghartman@hartman.mtv.corp.google.com>  Mon, 11 Jun 2018 18:19:44 -0700
+
+cuttlefish-common (0.6) RELEASED; urgency=medium
+
+  * Changes to fully enable WiFi
+
+ -- Greg Hartman <ghartman@hartman.mtv.corp.google.com>  Fri, 23 Mar 2018 17:30:46 -0700
+
+cuttlefish-common (0.1) UNRELEASED; urgency=medium
+
+  * Initial release. (Closes: #64528814)
+
+ -- Tomasz Wiszkowski <ender@google.com>  Wed, 09 Aug 2017 11:42:48 -0700

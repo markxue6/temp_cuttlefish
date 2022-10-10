@@ -1,0 +1,36 @@
+Format: 1.8
+Date: Wed, 31 Aug 2022 14:42:34 -0700
+Source: cuttlefish-frontend
+Binary: cuttlefish-orchestration cuttlefish-user
+Built-For-Profiles: noudeb
+Architecture: source amd64
+Version: 0.9.25
+Distribution: UNRELEASED
+Urgency: medium
+Maintainer: Cuttlefish Team
+Changed-By: Jorge Moreira Broche <jemoreira@google.com>
+Description:
+ cuttlefish-orchestration - Cuttlefish Android Virtual Device companion package
+ cuttlefish-user - Cuttlefish Android Virtual Device companion package
+Changes:
+ cuttlefish-frontend (0.9.25) UNRELEASED; urgency=medium
+ .
+   * Split source package into common and frontend
+Checksums-Sha1:
+ 9fe562dac802bd7666eff1c2c7a9a97bd7116fa9 703 cuttlefish-frontend_0.9.25.dsc
+ bee34bff6d8af17c73a61aa84ee6e8d49afe89cd 139504 cuttlefish-frontend_0.9.25.tar.xz
+ 6c78870800e765a6207400dd94672cc545e8270e 7625 cuttlefish-frontend_0.9.25_amd64.buildinfo
+ a2fbf790f186f76cfaa3560d1f9efe2b77bd6d05 2281188 cuttlefish-orchestration_0.9.25_amd64.deb
+ a314462a46ebd9c5fca3e84095b1cf5e34a81cb7 2209500 cuttlefish-user_0.9.25_amd64.deb
+Checksums-Sha256:
+ 6168ebb3039addb3b134d5cf065c59ac7f59e0c740875e85d8c5c8f2a70921da 703 cuttlefish-frontend_0.9.25.dsc
+ f17ae95f1fab636a0e542a0ffa35dbb4d919b8dc224e7292bcefbe4a415694f8 139504 cuttlefish-frontend_0.9.25.tar.xz
+ 4143d860594438ba8cd76446c72a66a2d9de7daac3a09dfd7aa1d01fa1b2f81b 7625 cuttlefish-frontend_0.9.25_amd64.buildinfo
+ 926d0dc7d2455b190b1b16fcfc946b0e7871102530c916b11e3524ed1427c64d 2281188 cuttlefish-orchestration_0.9.25_amd64.deb
+ cd8da2200b9e204716efd13c606ea231101143ad2736c69972cb183b6a3f5208 2209500 cuttlefish-user_0.9.25_amd64.deb
+Files:
+ 71303e3e2dea293e308b17e1d7ab9da8 703 misc optional cuttlefish-frontend_0.9.25.dsc
+ d60c91c08368b0be472eba787c1f14fa 139504 misc optional cuttlefish-frontend_0.9.25.tar.xz
+ 139a899b4175e8c16c933e41c50a80f6 7625 misc optional cuttlefish-frontend_0.9.25_amd64.buildinfo
+ f60ad2f79bcb88d2596d9b7104099fbc 2281188 misc optional cuttlefish-orchestration_0.9.25_amd64.deb
+ 59b9988106b1945f90862e8b78ed236b 2209500 misc optional cuttlefish-user_0.9.25_amd64.deb

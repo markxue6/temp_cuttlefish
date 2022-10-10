@@ -1,0 +1,14 @@
+<div>
+  <div class="view-pane">
+    <div class="device-viewer" *ngFor="let display of visibleDevices | async">
+      <h3>
+        {{ display.deviceId }}
+      </h3>
+      <iframe
+        style="margin: 10px 0 0 10px"
+        [src]="display.deviceId | safedeviceurl"
+        [title]="display.deviceId"
+      ></iframe>
+    </div>
+  </div>
+</div>
